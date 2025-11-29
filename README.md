@@ -32,9 +32,9 @@ CSRF: Identifies forms missing Anti-CSRF tokens.
 
 Clone the repository:
 
-git clone https://github.com/yourusername/web-vuln-scanner.git
+git clone https://github.com/martial-sudo/webscanner.git
 
-cd web-vuln-scanner
+cd webscanner
 
 Install dependencies:This tool requires Python 3 and a few external libraries.
 
@@ -47,18 +47,18 @@ Basic Scan
 
 Perform a standard crawl and vulnerability scan on a target URL:
 
-python scanner.py -u http://example.com
+python webscanner.py -u http://example.com
 
 Enable Subdomain Enumeration
 Scan for vulnerabilities and enumerate subdomains (default 10 threads): 
 
-python scanner.py -u http://example.com --scan-subdomains
+python webscanner.py -u http://example.com --scan-subdomains
 
 Full Custom Scan
 
 Run a comprehensive scan with custom wordlists and JSON output: 
 
-python scanner.py -u http://example.com \
+python webscanner.py -u http://example.com \
     --scan-subdomains \
     --subdomain-wordlist wordlists/subdomains.txt \
     --sql-wordlist wordlists/sqli.txt \
